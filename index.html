@@ -1,0 +1,1434 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kishore Tadepalli - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-primary">
+          <span class="text-gray-800">Kishore</span>
+          <span class="text-blue-600">Tadepalli</span>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#about"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="#education"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >Education</a
+          >
+          <a
+            href="#skills"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >Projects</a
+          >
+          <a
+            href="#certifications"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >Certifications</a
+          >
+          <a
+            href="#contact"
+            class="nav-link font-medium text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-gray-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+          <a
+            href="#about"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="#education"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >Education</a
+          >
+          <a
+            href="#skills"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >Projects</a
+          >
+          <a
+            href="#certifications"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >Certifications</a
+          >
+          <a
+            href="#contact"
+            class="py-2 font-medium text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden relative"
+    >
+      <!-- Decorative blobs -->
+      <div class="blob bg-blue-300 w-64 h-64 top-20 left-10"></div>
+      <div class="blob bg-blue-500 w-80 h-80 bottom-10 right-10"></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1
+            class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in"
+            style="animation-play-state: running"
+          >
+            <span class="animate-typewriter">Kishore Tadepalli</span>
+          </h1>
+          <h2
+            class="text-xl md:text-3xl mb-8 animate-fade-in delay-300"
+            style="animation-play-state: running"
+          >
+            Software Engineer &amp; Computer Science Student
+          </h2>
+          <p
+            class="text-lg md:text-xl mb-10 max-w-2xl mx-auto animate-fade-in delay-500"
+            style="animation-play-state: running"
+          >
+            Final-year Computer Science student passionate about building
+            scalable and secure solutions that make real-world impact.
+          </p>
+          <div
+            class="flex flex-wrap justify-center gap-4 animate-slide-up delay-700"
+            style="animation-play-state: running"
+          >
+            <a
+              href="#contact"
+              class="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300 hover:scale-105 transform shadow-lg"
+            >
+              Contact Me
+            </a>
+            <a
+              href="#projects"
+              class="border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-blue-600 transition duration-300 hover:scale-105 transform"
+            >
+              View Projects
+            </a>
+          </div>
+
+          <!-- Social links -->
+          <div
+            class="mt-12 flex justify-center space-x-6 animate-fade-in delay-800"
+            style="animation-play-state: running"
+          >
+            <a
+              href="mailto:kishoretadepalli15@gmail.com"
+              class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+            >
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kishore-tadepalli-232030289"
+              target="_blank"
+              class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/Kishore-15072004"
+              target="_blank"
+              class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="tel:+919618621038"
+              class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+            >
+              <i class="fas fa-phone-alt text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave shape divider -->
+      <div class="hero-shape">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white reveal active">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          About Me
+        </h2>
+        <div class="section-divider mx-auto"></div>
+
+        <div
+          class="max-w-4xl mx-auto mt-12 bg-white rounded-xl shadow-lg overflow-hidden"
+        >
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-6 gradient-text">
+              Professional Objectives
+            </h3>
+            <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+              Final-year Computer Science student (B.Tech, 2025) with strong
+              foundations in Java and software design principles. Passionate
+              about building scalable and secure solutions that make real-world
+              impact. Seeking to contribute as a Software Engineer at Mastercard
+              and grow within a globally inclusive, learning-driven team.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div
+                class="bg-blue-50 rounded-lg p-4 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                  </div>
+                </div>
+                <h4 class="font-medium text-gray-800">Problem Solver</h4>
+              </div>
+
+              <div
+                class="bg-blue-50 rounded-lg p-4 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fas fa-users text-blue-600 text-2xl"></i>
+                  </div>
+                </div>
+                <h4 class="font-medium text-gray-800">Team Player</h4>
+              </div>
+
+              <div
+                class="bg-blue-50 rounded-lg p-4 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                  </div>
+                </div>
+                <h4 class="font-medium text-gray-800">Quick Learner</h4>
+              </div>
+
+              <div
+                class="bg-blue-50 rounded-lg p-4 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fas fa-search text-blue-600 text-2xl"></i>
+                  </div>
+                </div>
+                <h4 class="font-medium text-gray-800">Detail-Oriented</h4>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 mt-10">
+              <a
+                href="mailto:kishoretadepalli15@gmail.com"
+                class="contact-icon text-gray-600 hover:text-blue-600 flex flex-col items-center"
+              >
+                <i class="fas fa-envelope text-3xl mb-2"></i>
+                <span class="text-sm">Email</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kishore-tadepalli-232030289"
+                target="_blank"
+                class="contact-icon text-gray-600 hover:text-blue-600 flex flex-col items-center"
+              >
+                <i class="fab fa-linkedin text-3xl mb-2"></i>
+                <span class="text-sm">LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/Kishore-15072004"
+                target="_blank"
+                class="contact-icon text-gray-600 hover:text-blue-600 flex flex-col items-center"
+              >
+                <i class="fab fa-github text-3xl mb-2"></i>
+                <span class="text-sm">GitHub</span>
+              </a>
+              <a
+                href="tel:+919618621038"
+                class="contact-icon text-gray-600 hover:text-blue-600 flex flex-col items-center"
+              >
+                <i class="fas fa-phone-alt text-3xl mb-2"></i>
+                <span class="text-sm">Phone</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50 reveal">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          Education
+        </h2>
+        <div class="section-divider mx-auto"></div>
+
+        <div class="max-w-5xl mx-auto mt-12">
+          <div class="relative">
+            <!-- Timeline line -->
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"
+              style="top: 0; bottom: 0;"
+            ></div>
+
+            <!-- B.Tech -->
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center mb-16 relative">
+              <div class="md:col-span-1 md:text-right md:pr-8 mb-6 md:mb-0">
+                <div class="bg-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:scale-105 animate-slide-right">
+                  <h3 class="text-xl font-semibold mb-2">
+                    Bachelor of Technology
+                  </h3>
+                  <p class="text-blue-600 mb-4">
+                    Computer Science and Engineering
+                  </p>
+                  <div class="text-gray-700">
+                    <p>
+                      <span class="font-medium">Institution:</span> Joginpally
+                      B.R Engineering College
+                    </p>
+                    <p>
+                      <span class="font-medium">Location:</span> Hyderabad,
+                      Telangana
+                    </p>
+                    <p><span class="font-medium">CGPA:</span> 7.3/10</p>
+                    <p><span class="font-medium">Graduation:</span> 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center relative">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-600 border-4 border-white flex items-center justify-center z-10"
+                >
+                  <i class="fas fa-graduation-cap text-white"></i>
+                </div>
+                <div class="hidden md:block h-full w-1 bg-blue-200 absolute top-10"></div>
+              </div>
+              <div class="md:col-span-1 md:pl-8 text-left">
+                <span class="text-blue-600 font-bold text-lg block md:mt-0 mt-4">
+                  2021 - 2025
+                </span>
+              </div>
+            </div>
+
+            <!-- Intermediate -->
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center mb-16 relative">
+              <div class="md:col-span-1 md:text-right md:pr-8 mb-6 md:mb-0 order-2 md:order-1">
+                <span class="text-blue-600 font-bold text-lg block md:mt-0 mt-4">
+                  2019 - 2021
+                </span>
+              </div>
+              <div class="flex flex-col items-center relative order-1 md:order-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-600 border-4 border-white flex items-center justify-center z-10"
+                >
+                  <i class="fas fa-school text-white"></i>
+                </div>
+                <div class="hidden md:block h-full w-1 bg-blue-200 absolute top-10"></div>
+              </div>
+              <div class="md:col-span-1 md:pl-8 text-left order-3">
+                <div class="bg-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:scale-105 animate-slide-left">
+                  <h3 class="text-xl font-semibold mb-2">
+                    Intermediate (12th Grade)
+                  </h3>
+                  <p class="text-blue-600 mb-4">Higher Secondary Education</p>
+                  <div class="text-gray-700">
+                    <p>
+                      <span class="font-medium">Institution:</span> Telangana
+                      Board of Intermediate Education
+                    </p>
+                    <p>
+                      <span class="font-medium">Location:</span> Telangana
+                    </p>
+                    <p><span class="font-medium">Percentage:</span> 96%</p>
+                    <p><span class="font-medium">Completion:</span> 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary School -->
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center relative">
+              <div class="md:col-span-1 md:text-right md:pr-8 mb-6 md:mb-0">
+                <div class="bg-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:scale-105 animate-slide-right">
+                  <h3 class="text-xl font-semibold mb-2">
+                    Secondary School (10th Grade)
+                  </h3>
+                  <p class="text-blue-600 mb-4">Secondary Education</p>
+                  <div class="text-gray-700">
+                    <p>
+                      <span class="font-medium">Institution:</span> Rahmath
+                      Nagar High School
+                    </p>
+                    <p>
+                      <span class="font-medium">Location:</span> Hyderabad,
+                      Telangana
+                    </p>
+                    <p><span class="font-medium">CGPA:</span> 9.2/10</p>
+                    <p><span class="font-medium">Completion:</span> 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center relative">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-600 border-4 border-white flex items-center justify-center z-10"
+                >
+                  <i class="fas fa-book text-white"></i>
+                </div>
+              </div>
+              <div class="md:col-span-1 md:pl-8 text-left">
+                <span class="text-blue-600 font-bold text-lg block md:mt-0 mt-4">
+                  2005 - 2019
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white relative overflow-hidden reveal">
+      <!-- Background decoration -->
+      <div
+        class="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full opacity-50 animate-pulse"
+      ></div>
+      <div
+        class="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-100 rounded-full opacity-50 animate-pulse"
+        style="animation-delay: 1s"
+      ></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          Technical Skills
+        </h2>
+        <div class="section-divider mx-auto"></div>
+
+        <div class="max-w-5xl mx-auto mt-12">
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div class="animate-slide-right">
+                <h3 class="text-xl font-semibold mb-8 flex items-center">
+                  <i class="fas fa-code text-blue-600 mr-3"></i>
+                  Programming Languages
+                </h3>
+
+                <!-- Programming Languages (remove percentage spans) -->
+                <div class="mb-8 transform transition-all duration-500 hover:scale-105">
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium flex items-center">
+                      <i class="fab fa-java text-red-500 mr-2"></i>
+                      Java
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mb-8 transform transition-all duration-500 hover:scale-105">
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium flex items-center">
+                      <i class="fab fa-python text-yellow-500 mr-2"></i>
+                      Python
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mb-8 transform transition-all duration-500 hover:scale-105">
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium flex items-center">
+                      <i class="fas fa-database text-blue-500 mr-2"></i>
+                      SQL
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mb-8 transform transition-all duration-500 hover:scale-105">
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium flex items-center">
+                      <i class="fab fa-html5 text-orange-500 mr-2"></i>
+                      HTML/CSS
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mb-8 transform transition-all duration-500 hover:scale-105">
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium flex items-center">
+                      <i class="fab fa-js text-yellow-400 mr-2"></i>
+                      JavaScript
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="animate-slide-up">
+                <h3 class="text-xl font-semibold mb-8 flex items-center">
+                  <i class="fas fa-tools text-blue-600 mr-3"></i>
+                  Frameworks &amp; Tools
+                </h3>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fab fa-react text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">React</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fas fa-code-branch text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Visual Studio</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fas fa-database text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">MySQL</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fab fa-git-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Git</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fas fa-brain text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Machine Learning</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fas fa-filter text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Data Preprocessing</p>
+                  </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-6 flex items-center">
+                  <i class="fas fa-laptop text-blue-600 mr-3"></i>
+                  Platforms
+                </h3>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fas fa-globe text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Web</p>
+                  </div>
+
+                  <div
+                    class="bg-blue-50 p-4 rounded-lg text-center transform transition-all duration-300 hover:scale-110 hover:bg-blue-100 hover:shadow-md"
+                  >
+                    <div class="flex justify-center items-center mb-2">
+                      <i class="fab fa-windows text-blue-600 text-2xl"></i>
+                    </div>
+                    <p class="font-medium">Windows</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated particles -->
+      <div
+        id="particles-container"
+        class="absolute inset-0 pointer-events-none"
+      >
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 10px;
+            height: 10px;
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+          "
+        ></div>
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 15px;
+            height: 15px;
+            top: 30%;
+            left: 80%;
+            animation-delay: 0.5s;
+          "
+        ></div>
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 8px;
+            height: 8px;
+            top: 70%;
+            left: 10%;
+            animation-delay: 1s;
+          "
+        ></div>
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 12px;
+            height: 12px;
+            top: 40%;
+            left: 60%;
+            animation-delay: 1.5s;
+          "
+        ></div>
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 10px;
+            height: 10px;
+            top: 80%;
+            left: 50%;
+            animation-delay: 2s;
+          "
+        ></div>
+        <div
+          class="particle bg-blue-500 opacity-20 rounded-full absolute animate-float"
+          style="
+            width: 6px;
+            height: 6px;
+            top: 20%;
+            left: 30%;
+            animation-delay: 2.5s;
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 reveal">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          Projects
+        </h2>
+        <div class="section-divider mx-auto"></div>
+
+        <div class="max-w-6xl mx-auto mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-up transform transition-all duration-500 hover:scale-105"
+            >
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-700 h-2 animate-pulse"
+              ></div>
+              <div class="p-8 relative">
+                <!-- Project icon -->
+                <div
+                  class="absolute -top-1 right-6 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-lg"
+                >
+                  <div class="animate-float">
+                    <i class="fas fa-music text-xl"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3 gradient-text">
+                  Emotunes
+                </h3>
+                <p class="text-gray-600 mb-4 font-medium">
+                  Emotion and Weather based Music Recommendation System
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Built an AI-driven music recommendation system that analyzes
+                  users' real-time emotional states via webcam and weather data
+                  to suggest personalized playlists.
+                </p>
+                <div class="mb-6">
+                  <h4 class="font-medium mb-3 text-gray-800">
+                    Technologies Used:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-python mr-1"></i> Python
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-js mr-1"></i> JavaScript
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-brain mr-1"></i> Machine Learning
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-eye mr-1"></i> Computer Vision
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-spotify mr-1"></i> Spotify API
+                    </span>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium flex items-center group transition duration-300"
+                  >
+                    <span><a href="https://github.com/Kishore-15072004/EmoTunes" target="_blank" class="hover:underline">View Details</a></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-up delay-100 transform transition-all duration-500 hover:scale-105"
+            >
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-700 h-2 animate-pulse"
+              ></div>
+              <div class="p-8 relative">
+                <!-- Project icon -->
+                <div
+                  class="absolute -top-1 right-6 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-lg"
+                >
+                  <div class="animate-float">
+                    <i class="fas fa-wind text-xl"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3 gradient-text">
+                  Breathe Easy
+                </h3>
+                <p class="text-gray-600 mb-4 font-medium">
+                  Air Pollution Monitoring and Prediction System
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Created a full-stack system for real-time AQI monitoring,
+                  prediction, and visualization. Implemented ML models and
+                  backend APIs with alerts.
+                </p>
+                <div class="mb-6">
+                  <h4 class="font-medium mb-3 text-gray-800">
+                    Technologies Used:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-python mr-1"></i> Python (Flask/FastAPI)
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-brain mr-1"></i> Machine Learning
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-filter mr-1"></i> Data Preprocessing
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-database mr-1"></i> MySQL
+                    </span>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium flex items-center group transition duration-300"
+                  >
+                    <span><a href="https://github.com/Kishore-15072004/Breathe-Easy" target="_blank" class="hover:underline">View Details</a></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-up delay-200 transform transition-all duration-500 hover:scale-105"
+            >
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-700 h-2 animate-pulse"
+              ></div>
+              <div class="p-8 relative">
+                <!-- Project icon -->
+                <div
+                  class="absolute -top-1 right-6 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-lg"
+                >
+                  <div class="animate-float">
+                    <i class="fas fa-question text-xl"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3 gradient-text">
+                  Quiz Master
+                </h3>
+                <p class="text-gray-600 mb-4 font-medium">
+                  Web Based Java Quiz Game
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Developed a dynamic, web-based quiz game that challenges users
+                  with randomized computer science questions, providing
+                  immediate feedback and detailed score results.
+                </p>
+                <div class="mb-6">
+                  <h4 class="font-medium mb-3 text-gray-800">
+                    Technologies Used:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-html5 mr-1"></i> HTML5
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-css3-alt mr-1"></i> CSS3
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-js mr-1"></i> JavaScript (ES6+)
+                    </span>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium flex items-center group transition duration-300"
+                  >
+                    <span><a href="https://github.com/Kishore-15072004/Quiz-Game" target="_blank" class="hover:underline">View Details</a></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-up delay-300 transform transition-all duration-500 hover:scale-105"
+            >
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-700 h-2 animate-pulse"
+              ></div>
+              <div class="p-8 relative">
+                <!-- Project icon -->
+                <div
+                  class="absolute -top-1 right-6 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-lg"
+                >
+                  <div class="animate-float">
+                    <i class="fas fa-book text-xl"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3 gradient-text">
+                  Library Management System
+                </h3>
+                <p class="text-gray-600 mb-4 font-medium">
+                  Database Management Application
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Developed a console-based application for managing library
+                  book records, enabling users to add, search, update, and
+                  remove book entries.
+                </p>
+                <div class="mb-6">
+                  <h4 class="font-medium mb-3 text-gray-800">
+                    Technologies Used:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fab fa-java mr-1"></i> Java (Core Java, JDBC)
+                    </span>
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs transform transition-all duration-300 hover:scale-110 hover:bg-blue-200"
+                    >
+                      <i class="fas fa-database mr-1"></i> MySQL
+                    </span>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium flex items-center group transition duration-300"
+                  >
+                    <span>View Details</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-white reveal">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          Certifications
+        </h2>
+        <div class="section-divider mx-auto"></div>
+
+        <div class="max-w-6xl mx-auto mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fab fa-java text-blue-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">Java Programming</h3>
+                  <p class="text-gray-600">GeeksForGeeks</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2025</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up delay-100 transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fab fa-linkedin text-blue-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">
+                    Career Essentials in Software Development
+                  </h3>
+                  <p class="text-gray-600">LinkedIn Learning</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2025</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up delay-200 transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div class="flex items-center justify-center">
+                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">
+                    Data Science &amp; Analytics
+                  </h3>
+                  <p class="text-gray-600">HP LIFE</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2025</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up delay-300 transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fab fa-python text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">Python 3.X</h3>
+                  <p class="text-gray-600">Simplilearn</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2024</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up delay-400 transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-code text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">
+                    Web Development for Beginners
+                  </h3>
+                  <p class="text-gray-600">Simplilearn</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2024</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100 hover:shadow-lg transition duration-300 animate-slide-up delay-500 transform hover:scale-105"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fab fa-java text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">Java Programming</h3>
+                  <p class="text-gray-600">Spoken Tutorial</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-gray-500">2024</span>
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs"
+                  ><a href="https://www.linkedin.com/in/kishore-tadepalli-232030289/details/certifications/" target="_blank">Credential</a></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 border border-blue-100 shadow-md animate-fade-in"
+          >
+            <h3 class="text-2xl font-semibold mb-6 gradient-text">
+              Seminars &amp; Workshops
+            </h3>
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/4 mb-6 md:mb-0">
+                <div
+                  class="bg-gradient-to-r from-blue-500 to-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-vr-cardboard text-2xl"></i>
+                </div>
+                <p class="font-medium text-lg">
+                  Virtual Reality and the Metaverse
+                </p>
+                <p class="text-gray-600">
+                  Joginpally B.R. Engineering College (2024)
+                </p>
+              </div>
+              <div class="md:w-3/4 md:pl-10 md:border-l border-blue-200">
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                    <p>
+                      Delivered a seminar on VR and the Metaverse, exploring its
+                      applications in gaming, education, and healthcare.
+                    </p>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                    <p>
+                      Received positive feedback for presenting complex concepts
+                      clearly with practical insights.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white reveal"
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+          Get In Touch
+        </h2>
+        <div class="section-divider bg-white mx-auto"></div>
+
+        <div class="max-w-5xl mx-auto mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="animate-slide-right">
+              <div class="bg-white/10 backdrop-blur-md rounded-xl p-8">
+                <h3 class="text-2xl font-semibold mb-8">Contact Information</h3>
+
+                <div class="space-y-6">
+                  <div class="flex items-center">
+                    <div
+                      class="bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-lg"
+                    >
+                      <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium text-sm">Email</p>
+                      <a
+                        href="mailto:kishoretadepalli15@gmail.com"
+                        class="text-white hover:text-blue-200 transition duration-300"
+                        >kishoretadepalli15@gmail.com</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-lg"
+                    >
+                      <i class="fas fa-phone-alt text-xl"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium text-sm">Phone</p>
+                      <a
+                        href="tel:+919618621038"
+                        class="text-white hover:text-blue-200 transition duration-300"
+                        >+91 9618621038</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-lg"
+                    >
+                      <i class="fab fa-linkedin-in text-xl"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium text-sm">LinkedIn</p>
+                      <a
+                        href="https://www.linkedin.com/in/kishore-tadepalli-232030289"
+                        target="_blank"
+                        class="text-white hover:text-blue-200 transition duration-300"
+                        >kishore-tadepalli-232030289</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-lg"
+                    >
+                      <i class="fab fa-github text-xl"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium text-sm">GitHub</p>
+                      <a
+                        href="https://github.com/Kishore-15072004"
+                        target="_blank"
+                        class="text-white hover:text-blue-200 transition duration-300"
+                        >Kishore-15072004</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-10 flex justify-center space-x-6">
+                  <a
+                    href="mailto:kishoretadepalli15@gmail.com"
+                    class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kishore-tadepalli-232030289"
+                    target="_blank"
+                    class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Kishore-15072004"
+                    target="_blank"
+                    class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="tel:+919618621038"
+                    class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fas fa-phone-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="animate-slide-up">
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Send Me a Message
+                </h3>
+
+                <form id="contact-form" class="space-y-6">
+                  <div>
+                    <label for="name" class="block mb-2 text-gray-700"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email" class="block mb-2 text-gray-700"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Email"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="message" class="block mb-2 text-gray-700"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="4"
+                      class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition duration-300 shadow-lg"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0 text-center md:text-left">
+            <h2 class="text-2xl font-bold mb-2">Kishore Tadepalli</h2>
+            <p class="text-gray-400">
+              Software Engineer &amp; Computer Science Student
+            </p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a
+              href="mailto:kishoretadepalli15@gmail.com"
+              class="text-gray-400 hover:text-blue-400 transition duration-300"
+            >
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kishore-tadepalli-232030289"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/Kishore-15072004"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="tel:+919618621038"
+              class="text-gray-400 hover:text-blue-400 transition duration-300"
+            >
+              <i class="fas fa-phone-alt text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <div class="custom-cursor"></div>
+    <div class="cursor-inner"></div>
+    <script src="script.js"></script>
+    <iframe
+      height="1"
+      width="1"
+      style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border: none;
+        visibility: hidden;
+      "
+    ></iframe>
+  </body>
+</html>
