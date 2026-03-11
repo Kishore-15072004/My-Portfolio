@@ -52,10 +52,7 @@ New_Portfolio/
 - **Contact Info**:  
   Update email, phone, and social links as needed.
 
-## 📸 Screenshots
 
-![Portfolio Screenshot](screenshot.png)  
-*Add your own screenshot here!*
 
 ## 📬 Contact
 
