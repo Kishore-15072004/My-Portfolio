@@ -91,13 +91,26 @@ const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-  // This is a demo form - in a real application, you would send this data to a server
-  alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-  contactForm.reset();
+  if (!name || !email || !message) {
+    alert("Please fill in all fields before sending your message.");
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  const subject = `Contact request from ${name}`;
+  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+  const mailtoLink = `mailto:kishoretadepalli15@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+  window.location.href = mailtoLink;
 });
 
 // Animation on scroll
@@ -166,37 +179,3 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(skillsSection);
-
-(function () {
-  function c() {
-    var b = a.contentDocument || a.contentWindow.document;
-    if (b) {
-      var d = b.createElement("script");
-      d.innerHTML =
-        "window.__CF$cv$params={r:'95de6e89501d7ef7',t:'MTc1MjMwMTE5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-      b.getElementsByTagName("head")[0].appendChild(d);
-    }
-  }
-  if (document.body) {
-    var a = document.createElement("iframe");
-    a.height = 1;
-    a.width = 1;
-    a.style.position = "absolute";
-    a.style.top = 0;
-    a.style.left = 0;
-    a.style.border = "none";
-    a.style.visibility = "hidden";
-    document.body.appendChild(a);
-    if ("loading" !== document.readyState) c();
-    else if (window.addEventListener)
-      document.addEventListener("DOMContentLoaded", c);
-    else {
-      var e = document.onreadystatechange || function () {};
-      document.onreadystatechange = function (b) {
-        e(b);
-        "loading" !== document.readyState &&
-          ((document.onreadystatechange = e), c());
-      };
-    }
-  }
-})();
